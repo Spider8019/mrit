@@ -36,7 +36,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h1>Cards</h1>
+      <h1>Air Quality</h1>
       {error && <p>Sorry something went wrong.</p>}
       {_.isEmpty(result)
         ?
@@ -46,9 +46,6 @@ function App() {
 
           <div className="card">
 
-            <p style={{ textTransform: "capitalize" }}><span>Status</span><br />{result.status}</p>
-            <p style={{ textTransform: "capitalize" }}><span>Day Cycle</span><br />{result.day_cycle}</p>
-            <p><span>Elapsed</span><br />{result.elapsed}</p>
             <p><span>Hit-time</span><br />{Object.values(result[0].hit_time)}</p>
             <p><span>Temperature</span><br />{Object.values(result[0].Temperatue)}°C</p>
             <p><span>Humidity</span><br />{Object.values(result[0].Humidity)}%RH</p>
@@ -59,7 +56,6 @@ function App() {
             <p><span>PM1.0</span><br />{Object.values(result[0].PM_1_0)}ug/m<sup>3</sup></p>
             <p><span>PM2.5</span><br />{Object.values(result[0].PM_2_5)}ug/m<sup>3</sup></p>
             <p><span>PM10</span><br />{Object.values(result[0].PM_10)}ug/m<sup>3</sup></p>
-            <p><span>VOC</span><br />{Object.values(result[0].VOC)}grade</p>
 
           </div>
         </div>
