@@ -46,7 +46,6 @@ function App() {
 
           <div className="card">
 
-            <p><span>Hit-time</span><br />{Object.values(result[0].hit_time)}</p>
             <p><span>Temperature</span><br />{Object.values(result[0].Temperatue)}°C</p>
             <p><span>Humidity</span><br />{Object.values(result[0].Humidity)}%RH</p>
             <p><span>CH<sub>2</sub>O</span><br />{Object.values(result[0].CH2O)}mg/m<sup>3</sup> </p>
